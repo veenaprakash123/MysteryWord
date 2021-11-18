@@ -104,25 +104,21 @@ function checkGameStatus() {
     if (letterGuesser == 'Player 2'){
         if (player2Score == 2){
             alert(`GAME OVER! Player 2 wins the game!`);
-            break;
         }
     }
     else if (letterGuesser == 'Player 1'){
         if (player1Score == 2) {
         alert(`GAME OVER! Player 1 wins the game!`);
-        break;
         }
     }
     else if (wordSelector == 'Player 2') {
         if (player2Score == 2){
         alert(`GAME OVER! Player 2 wins the game!`);
-        break;
         }
     }
     else if (wordSelector == 'Player 1'){
         if (player1Score == 2){
             alert(`GAME OVER! Player 1 wins the game!`);
-            break;
         }
     }
 }
