@@ -4,27 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.2.0.min.js" integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I=" crossorigin="anonymous"></script> -->
     <title>Mystery Word</title>
+    <script src="style.css"></script>
 </head>
 <body>
-    <h1>Mystery Word</h1>
-
-    <div class="main-page">
-
-        <h1>Round 1</h1>
+   
+   <div class="top-header">
+        <h1 id="game-title">Mystery Word</h1>
+        <h2> <em id="round">Round 1</em></h2>
+    </div>
+    
+    <div class ="guessing-section"></div>
 
         <form id="guessForm">
-            <h2>Guess a letter</h2>
-            <input type="text" id="playersGuess" value="">
-            <button type="submit" id="submitGuess"></button>
+            <div id="Guess-header">
+                <h3>Guess a letter</h3>
+            </div>
+            <div id="Submit-guess">
+                <input type="text" id="playersGuess" value="" onfocus="this.value=''">
+                <button type="submit" id="submitGuess"> submit</button>
+            </div>
         </form>
-
-        <div id="placeholders"></div>
-
 
     </div>
 
-    <script src="style.css"></script>
+    <div class="placeholders">
+            
+    </div>
+
+    <div class="image">
+
+    </div>
+
+    <div class="score-section">
+        <div id="scoreboard">
+            <h3 id="score-title">Score</h3>
+            <h5 id="player1">Player 1: 0</h5>
+            <h5 id="player2">Player 2: 0</h5>
+        </div>
+    </div>
     <script src="scratchwork.js"></script>
 </body>
 </html>
