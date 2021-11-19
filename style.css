@@ -22,6 +22,18 @@ body {
     align-items: center;
 }
 
+#friendsMessage {
+    color: white;
+    background-color:red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
 #game-title {
     color: teal;
 }
@@ -44,7 +56,7 @@ form {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    color: white;
+    color:white;
     font-size: xx-large;
     width: 20%;
     height: 50%;

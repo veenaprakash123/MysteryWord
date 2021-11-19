@@ -126,21 +126,25 @@ function checkGameStatus() {
     if (letterGuesser == 'Player 2'){
         if (player2Score == 2){
             alert(`GAME OVER! Player 2 wins the game!`);
+            alert(`Please select 'OK' on the next few alert messages and then refresh the page to restart game.`);
         }
     }
     else if (letterGuesser == 'Player 1'){
         if (player1Score == 2) {
         alert(`GAME OVER! Player 1 wins the game!`);
+        alert(`Please select 'OK' on the next few alert messages and then refresh the page to restart game.`);
         }
     }
-    else if (wordSelector == 'Player 2') {
+    if (wordSelector == 'Player 2') {
         if (player2Score == 2){
         alert(`GAME OVER! Player 2 wins the game!`);
+        alert(`Please select 'OK' on the next few alert messages and refresh the page to restart game.`);
         }
     }
     else if (wordSelector == 'Player 1'){
         if (player1Score == 2){
             alert(`GAME OVER! Player 1 wins the game!`);
+            alert(`Please select 'OK' on the next few alert messages and then refresh the page to restart game.`);
         }
     }
 }
