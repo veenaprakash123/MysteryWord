@@ -16,9 +16,9 @@ let guessForm = document.querySelector('#guessForm');
 
 let gameOver = false; 
 
-wordSelector = 'Player 1';
+let wordSelector = 'Player 1';
 
-letterGuesser = 'Player 2';
+let letterGuesser = 'Player 2';
 
 // Intro to game: 
 
@@ -41,7 +41,19 @@ let imgArray = [rachel, monica, chandler, pheobe, joey,
 ross];
 
 
+let round = 1;
+let winningPoints = 0;
+let antipoints = 0;
+let player1Score = 0
+let player2Score = 0
+
+
 function introMessage() {
+    
+    
+    checkGameStatus();
+    
+
     response = prompt(`Welcome to Mystery Word! ${wordSelector}, please enter a Mystery Word and don't tell your opponent! The Mystery Word should have at least 5 characters.`);
 
     hint = prompt(`Please enter a hint that may help your opponent guess the Mystery Word in case they are struggling too much.`);
@@ -70,41 +82,15 @@ function introMessage() {
 
     placeholders.append(mysteryLetter);
 
-
-    // let rachel = document.getElementById('0');
-    // let monica = document.getElementById('1');
-    // let chandler = document.getElementById('2');
-    // let pheobe = document.getElementById('3');
-    // let joey = document.getElementById('4');
-    // let ross = document.getElementById('5');
-    
-
-    // let imgArray = [rachel, monica, chandler, pheobe, joey,
-    // ross];
-
-
-    // let imgArray = ['../rachelFriends.png', '../monicaFriends.png', '../chandlerFriends.png', '../pheobeFriends.png', '../joeyFriends.png', '../rossFriends.png'];
-        
-
-    // //imgArray.style.display = block;
-
-    // let images = document.querySelector('.images');
-
-    // images.append(imgArray);
-
-
-
-
-    //console.dir(placeholders);
 }
 
 introMessage ();
 
-let round = 1;
-let winningPoints = 0;
-let antipoints = 0;
-let player1Score = 0
-let player2Score = 0
+// let round = 1;
+// let winningPoints = 0;
+// let antipoints = 0;
+// let player1Score = 0
+// let player2Score = 0
 
 let roundDisplayed = document.getElementById("round");
 
@@ -174,7 +160,7 @@ function checkWin() {
         setTimeout (function (){
             if (window.confirm(`Congratulations ${letterGuesser}, you won Round ${round}!`)) {
                 updateScoreLG();
-                checkGameStatus();
+                //checkGameStatus();
                 nextRound();
                 setTimeout ( function () {
                     introMessage();
@@ -189,7 +175,7 @@ function checkLoss() {
         setTimeout (function () {
             if (window.confirm(`Oops! Looks like you lost Round ${round} to ${wordSelector}!`)) {
                 updateScoreWS();
-                checkGameStatus();
+                //checkGameStatus();
                 nextRound();
                 setTimeout ( function () {
                     introMessage();
