@@ -8,6 +8,7 @@ function switchPlayer() {
         letterGuesser = 'Player 2';
         wordSelector = 'Player 1';
     }
+    // imgArray.style.visibility = 'hidden';
 }
 
 
@@ -27,6 +28,19 @@ let mysteryLetters
 
 // let antipoints
 
+
+let rachel = document.getElementById('0');
+let monica = document.getElementById('1');
+let chandler = document.getElementById('2');
+let pheobe = document.getElementById('3');
+let joey = document.getElementById('4');
+let ross = document.getElementById('5');
+
+
+let imgArray = [rachel, monica, chandler, pheobe, joey,
+ross];
+
+
 function introMessage() {
     response = prompt(`Welcome to Mystery Word! ${wordSelector}, please enter a Mystery Word and don't tell your opponent! The Mystery Word should have at least 5 characters.`);
 
@@ -38,6 +52,8 @@ function introMessage() {
     console.log(mysteryLetters);
 
     var placeholders = document.querySelector('.placeholders');
+
+    //imgArray.style.visibility = 'hidden'
 
     alert(`${letterGuesser}, it's time for you to start guessing which letters are in the Mystery Word! There are ${response.length} letters in the word. `)
 
@@ -52,7 +68,34 @@ function introMessage() {
         console.log(mysteryLetter);
     }
 
-    console.dir(placeholders);
+    placeholders.append(mysteryLetter);
+
+
+    // let rachel = document.getElementById('0');
+    // let monica = document.getElementById('1');
+    // let chandler = document.getElementById('2');
+    // let pheobe = document.getElementById('3');
+    // let joey = document.getElementById('4');
+    // let ross = document.getElementById('5');
+    
+
+    // let imgArray = [rachel, monica, chandler, pheobe, joey,
+    // ross];
+
+
+    // let imgArray = ['../rachelFriends.png', '../monicaFriends.png', '../chandlerFriends.png', '../pheobeFriends.png', '../joeyFriends.png', '../rossFriends.png'];
+        
+
+    // //imgArray.style.display = block;
+
+    // let images = document.querySelector('.images');
+
+    // images.append(imgArray);
+
+
+
+
+    //console.dir(placeholders);
 }
 
 introMessage ();
@@ -99,7 +142,7 @@ function updateScoreLG (){
     }
 }
 
-
+// Need to find a way to end the game/ break the loop. 
 function checkGameStatus() {
     if (letterGuesser == 'Player 2'){
         if (player2Score == 2){
@@ -142,7 +185,7 @@ function checkWin() {
 }
 
 function checkLoss() {
-    if (antipoints == 11){
+    if (antipoints == 7){
         setTimeout (function () {
             if (window.confirm(`Oops! Looks like you lost Round ${round} to ${wordSelector}!`)) {
                 updateScoreWS();
@@ -161,6 +204,11 @@ function checkForHint () {
         alert(`Here's a hint: ${hint}`);
     }
 }
+
+function showImage() {  
+    imgArray[antipoints-1].style.visibility = 'visible'
+    }
+
 
 
 
@@ -188,6 +236,7 @@ guessForm.addEventListener('submit', async(e) => {
         antipoints = antipoints + 1; 
         console.log(`Number of incorrect guesses:` , antipoints);
         checkLoss();
+        showImage();
     }
 })
 
