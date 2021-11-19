@@ -34,6 +34,11 @@ Screenshots:
 
 <img src="first prompt answer.png">
 
+<img src="hint prompt answer.png">
+
+<img src="first alert.png">
+
+<img src="guesses.png">
 
 
 Stretch Goals: 
