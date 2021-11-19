@@ -40,6 +40,12 @@ Screenshots:
 
 <img src="guesses.png">
 
+<img src="wrong guess alert.png">
+
+<img src="hintDisplayed.png">
+
+<img src="losingRound.png">
+
 
 Stretch Goals: 
 
@@ -47,5 +53,11 @@ Stretch Goals:
 2. As a player guessing letters in the hidden word, I want to receive a hint after a certain number of incorrect guesses. (Implemented)
 
 
+Unsolved Problems: 
+
+Currently the game does not properly reset by itself once a player wins 2 rounds. For this reason, the player is asked to select 'OK' in the following alert messages/ prompts they see and to then refresh the page.
 
 
+Hurdle that was overcome: 
+
+One issue that I faced early on was the way in which the Mystery Word was hidden on the page. I have created divs for each letter and then adjusted the display of the div to none. This caused issues because when a div's display is 'none', the page ignores the div as a whole and other elements on the page are rearranged. As a result, I matched the color of the Mystery Word to the color of the background, and changed the color of each letter to black when guessed correctly by the player. 
