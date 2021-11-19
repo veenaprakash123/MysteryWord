@@ -61,3 +61,7 @@ Currently the game does not properly reset by itself once a player wins 2 rounds
 Hurdle that was overcome: 
 
 One issue that I faced early on was the way in which the Mystery Word was hidden on the page. I have created divs for each letter and then adjusted the display of the div to none. This caused issues because when a div's display is 'none', the page ignores the div as a whole and other elements on the page are rearranged. As a result, I matched the color of the Mystery Word to the color of the background, and changed the color of each letter to black when guessed correctly by the player. 
+
+Wireframes: 
+
+<img src="project1_wireframe2.png">
