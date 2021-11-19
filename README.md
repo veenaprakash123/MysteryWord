@@ -29,9 +29,18 @@ MVP User Stories:
 7. As a player, I want to be notified who the ultimate winner of the game is once either me or my opponent wins two rounds. 
 8. As a player I want to see the score be updated every time a round is completed
 
+
+Screenshots: 
+
+<img src="first prompt answer.png">
+
+
+
 Stretch Goals: 
 
-1. As a player guessing letters in the hidden word, I want the ability to guess the whole word. (not implemented yet!)
-2. As a player guessing letters in the hidden word, I want to receive a hint after a certain number of incorrect guesses. (implemented)
+1. As a player guessing letters in the hidden word, I want the ability to guess the whole word. (Not implemented yet!)
+2. As a player guessing letters in the hidden word, I want to receive a hint after a certain number of incorrect guesses. (Implemented)
+
+
 
 
