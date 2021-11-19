@@ -49,10 +49,8 @@ let player2Score = 0
 
 
 function introMessage() {
-    
-    
+
     checkGameStatus();
-    
 
     response = prompt(`Welcome to Mystery Word! ${wordSelector}, please enter a Mystery Word and don't tell your opponent! The Mystery Word should have at least 5 characters.`);
 
@@ -64,8 +62,6 @@ function introMessage() {
     console.log(mysteryLetters);
 
     var placeholders = document.querySelector('.placeholders');
-
-    //imgArray.style.visibility = 'hidden'
 
     alert(`${letterGuesser}, it's time for you to start guessing which letters are in the Mystery Word! There are ${response.length} letters in the word. `)
 
@@ -84,13 +80,10 @@ function introMessage() {
 
 }
 
-introMessage ();
 
-// let round = 1;
-// let winningPoints = 0;
-// let antipoints = 0;
-// let player1Score = 0
-// let player2Score = 0
+// Game starts here:
+
+introMessage ();
 
 let roundDisplayed = document.getElementById("round");
 
@@ -153,6 +146,18 @@ function checkGameStatus() {
 }
 
 
+
+function hideImages(){
+    rachel.style.visibility = "hidden";
+    monica.style.visibility = "hidden";
+    chandler.style.visibility = "hidden";
+    pheobe.style.visibility = "hidden";
+    joey.style.visibility = "hidden";
+    ross.style.visibility = "hidden";
+}    
+
+
+
 function checkWin() {
     console.log(winningPoints, mysteryLetters.length);
     if (winningPoints == mysteryLetters.length){
@@ -162,6 +167,7 @@ function checkWin() {
                 updateScoreLG();
                 //checkGameStatus();
                 nextRound();
+                hideImages();
                 setTimeout ( function () {
                     introMessage();
                 }, 1300 );
@@ -177,6 +183,7 @@ function checkLoss() {
                 updateScoreWS();
                 //checkGameStatus();
                 nextRound();
+                hideImages();
                 setTimeout ( function () {
                     introMessage();
                 }, 1300 );
@@ -194,7 +201,7 @@ function checkForHint () {
 function showImage() {  
     imgArray[antipoints-1].style.visibility = 'visible'
     }
-
+    
 
 
 
