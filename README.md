@@ -26,7 +26,7 @@ MVP User Stories:
 2. As a player, I want the word selected by my opponent to initially be hidden from view so that I won’t know what it is. 
 3. As a player, I want to guess the letters in the word selected by my opponent so that the word will eventually be revealed to me.
 4. As a player, I want to see the letter(s) that I guess correctly, so that I can see my progress and potentially guess the whole word. 
-5. As a player I want the game to display a an image every time I guess a letter that does not belong to the hidden word, so that I the number of times I guess incorrectly is visually tracked.
+5. As a player I want the game to display an image every time I guess a letter that does not belong to the hidden word, so that I the number of times I guess incorrectly is visually tracked.
 6. As a player, I want to be notified if I have guessed all the letters correctly and won the round, or if I have run out of opportunities to make any more guesses and lost round. 
 7. As a player, I want to be notified who the ultimate winner of the game is once either me or my opponent wins two rounds. 
 8. As a player I want to see the score be updated every time a round is completed.
