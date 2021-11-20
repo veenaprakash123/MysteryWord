@@ -1,4 +1,6 @@
 ** MYSTERY WORD **
+<img scr="snowman.gif">
+
 
 Introduction:
 
