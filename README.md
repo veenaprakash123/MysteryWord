@@ -45,6 +45,10 @@ Screenshots:
 
 <img src="losingRound.png">
 
+<img src="winningRound.png">
+
+<img src="gameOver.png>
+
 
 Stretch Goals: 
 
