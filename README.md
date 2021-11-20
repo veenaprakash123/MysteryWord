@@ -1,5 +1,6 @@
-** MYSTERY WORD **
-<img scr="snowman.gif">
+![snowman](https://user-images.githubusercontent.com/91581821/142730537-46047192-00b2-4048-b873-b6b5daa4b376.gif)
+
+MYSTERY WORD
 
 link to game: https://veenaprakash123.github.io/MysteryWord/index.html
 
@@ -18,8 +19,7 @@ Technologies Used:
 
 Installation Instructions: 
 
-1. Clone this repo into a local file 
-2. Open the index.html file in your browser and get started! 
+1. Installation not required- Just use the link above to play the game!
 
 
 MVP User Stories: 
