@@ -1,6 +1,8 @@
 ** MYSTERY WORD **
 <img scr="snowman.gif">
 
+link to game: https://veenaprakash123.github.io/MysteryWord/index.html
+
 
 Introduction:
 
