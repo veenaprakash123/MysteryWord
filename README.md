@@ -37,7 +37,7 @@ User Stories for MVP:
 8.	As a player I want to be notified who ultimately wins the game – whether me or my opponent is the first player to win two rounds.  
 
 
-Screenshots of the game: 
+Screenshots of game: 
 
 <img src="first prompt answer.png">
 
@@ -58,7 +58,7 @@ Screenshots of the game:
 <img src="gameOver.png">
 
 
-User Stories for Stretch goals: 
+User Stories for stretch goals: 
 
 1.	As a Player I want the opportunity to guess the whole word at once, so that I can win the round faster if I have figured out what the word is. (Not implemented yet)
 2.	As a Player I want to enter a hint for the mystery word I select, so that my opponent can get help if they are struggling. (Implemented)
